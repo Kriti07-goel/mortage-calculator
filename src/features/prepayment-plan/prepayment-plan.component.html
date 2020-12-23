@@ -4,7 +4,7 @@
   </div>
   <div class="content" [formGroup]="form">
     <div class="display_flex" fxLayout>
-      <div fxFlex ="30%"> <span class="material-icons" (click)="showInfo('preamt')">help</span>Prepayment Amount</div> 
+      <div class="padding_top_10" fxFlex ="30%"> <span class="material-icons" (click)="showInfo('preamt')">help</span>Prepayment Amount</div> 
       <div fxFlex ="70%">
           <span> 
             <span class="add_on ">$</span>
@@ -28,7 +28,7 @@
       
     </div>
     <div class="display_flex" fxLayout>
-      <div fxFlex ="30%"> <span class="material-icons" (click)="showInfo('prefreq')">help</span>Prepayment Frequency</div> 
+      <div class="padding_top_10" fxFlex ="30%"> <span class="material-icons" (click)="showInfo('prefreq')">help</span>Prepayment Frequency</div> 
       <div fxFlex ="70%">
         <mat-select class="select" formControlName="prefrequency">
           <mat-option *ngFor="let year of preFeq" [value]="year.id" >{{ year.value }}</mat-option>
@@ -52,7 +52,7 @@
       
     </div>
     <div class="display_flex" fxLayout>
-      <div fxFlex ="30%"><span class="material-icons" (click)="showInfo('start')">help</span> Start with Payment</div> 
+      <div class="padding_top_10" fxFlex ="30%"><span class="material-icons" (click)="showInfo('start')">help</span> Start with Payment</div> 
       <div fxFlex ="70%">
           <span> 
             

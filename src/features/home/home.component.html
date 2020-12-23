@@ -1,18 +1,18 @@
 <div class="container">
   <div class="page_title">
-    <h1>Mortage Calculator</h1>
+    Mortage Calculator
   </div>
   <div class="display_flex">
-    <div fxFlex="10%">
+    <div fxFlex="5%">
     </div>
-    <div class="section" fxFlex="40%">
+    <div class="section" fxFlex="45%">
 
       <app-payment-plan [form]="formGroup"></app-payment-plan>
     </div>
-    <div class="section margin_left_20" fxFlex="40%">
+    <div class="section margin_left_20" fxFlex="45%">
       <app-prepayment-plan [form] ="formGroup"></app-prepayment-plan>
     </div>
-    <div fxFlex="10%">
+    <div fxFlex="5%">
     </div>
   </div>
   
@@ -21,7 +21,9 @@
     <button class="calculate" (click) ="calculate()">Calculate</button>
   </div>
   <div class="table_section" *ngIf="isCalculatePressed">
-    <h1>Mortage Summary</h1>
+    <div class="page_title">
+      Mortage Summary
+    </div>
     <table>
       <tr>
         <th>Category</th>

@@ -17,11 +17,16 @@
 .disp_inline{
     display: inline-block;
 }
+
+.padding_top_10 {
+    padding-top:10px;
+}
 .margin_left_20{
     margin-left:20px;
 }
 .content{
     padding:10px;
+    font-size:16px;
 }
 .width_100{
     width:100% !important;
@@ -47,7 +52,7 @@
 .input_val {
     position: relative;
     z-index: 2;
-   
+   padding-left:10px;
     width: 100%;
     margin-bottom: 0;
     display: inline-block;
