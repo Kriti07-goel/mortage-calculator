@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="page_title">
+    <h1>Mortage Calculator</h1>
+  </div>
+  <div class="display_flex">
+    <div fxFlex="10%">
+    </div>
+    <div class="section" fxFlex="40%">
+
+      <app-payment-plan [form]="formGroup"></app-payment-plan>
+    </div>
+    <div class="section margin_left_20" fxFlex="40%">
+      <app-prepayment-plan [form] ="formGroup"></app-prepayment-plan>
+    </div>
+    <div fxFlex="10%">
+    </div>
+  </div>
+  
+
+  <div class="center">
+    <button class="calculate" (click) ="calculate()">Calculate</button>
+  </div>
+  <div class="table_section" *ngIf="isCalculatePressed">
+    <h1>Mortage Summary</h1>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Term</th>
+        <th>Amortization Period</th>
+      </tr>
+      <tr>
+        <td>Number of payment</td>
+        <td>{{tableData?.termData?.noOfPayments}}</td>
+        <td>{{tableData?.amrr_period?.noOfPayments}}</td>
+      </tr>
+      <tr>
+        <td>Mortgage payment</td>
+        <td>{{tableData?.termData?.mortPayment}}</td>
+        <td>{{tableData?.amrr_period?.mortPayment}}</td>
+      </tr>
+      <tr>
+        <td>Prepayment</td>
+        <td>{{tableData?.termData?.prepayment}}</td>
+        <td>{{tableData?.amrr_period?.prepayment}}</td>
+      </tr>
+      <tr>
+        <td>Principal payment</td>
+        <td>{{tableData?.termData?.principal}}</td>
+        <td>{{tableData?.amrr_period?.principal}}</td>
+      </tr>
+      <tr>
+        <td>Interest payment</td>
+        <td>{{tableData?.termData?.interest}}</td>
+        <td>{{tableData?.amrr_period?.interest}}</td>
+      </tr>
+      <tr>
+        <td>Total Cost</td>
+        <td>{{tableData?.termData?.total}}</td>
+        <td>{{tableData?.amrr_period?.total}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="table_section" *ngIf="!isCalculatePressed">
+    Click calculate to view data.
+  </div>
+  
+</div>

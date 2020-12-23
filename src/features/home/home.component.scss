@@ -1,0 +1,41 @@
+@import '../../styles.scss';
+.container{
+    padding:20px;
+}
+.calculate {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #5555b2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.page_title{
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .center{
+      text-align:center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .table_section {
+      text-align: center;
+      margin-top:30px;
+      border-bottom: 1px solid black;
+  }

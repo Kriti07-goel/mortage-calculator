@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.header {
+    background-color: #5555b2;
+    color: white;
+    padding:10px;
+    font-size: 16px;
+}
+
+.section{
+    width: 40%;
+    border-radius: 3px;
+    border:1px solid black;
+
+}
+.disp_inline{
+    display: inline-block;
+}
+.margin_left_20{
+    margin-left:20px;
+}
+.content{
+    padding:10px;
+}
+.width_100{
+    width:100% !important;
+}
+.right_side{
+    float:left;
+}
+.add_on{
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* width: 1%; */
+    white-space: nowrap;
+    vertical-align: middle;
+    display: inline-block;
+}
+.input_val {
+    position: relative;
+    z-index: 2;
+   
+    width: 100%;
+    margin-bottom: 0;
+    display: inline-block;
+    height: 37px;
+    font-size: 16px;
+    line-height: 1.4375;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.display_flex{
+    width:100%;
+    margin:10px;
+    display: flex !important;
+}
+.margin_left_10{
+    margin-left:10px;
+}
+.select{
+    border: 1px solid #c9c1c1;
+    width: 30%;
+    padding: 10px;
+    border-radius: 6px;
+   
+}
+.material-icons{
+    font-size:14px;
+    margin-right:5px;
+    cursor: pointer;
+}
+.info_section {
+    margin-left: 13px;
+    padding: 10px 10px 10px 0px;
+    background-color: aliceblue;
+    border-left: 5px solid #6464f2;
+}
+.info{
+    color:#6464f2;
+    font-size: 21px !important;
+}
+.close_button{
+    text-align: right;
+    margin-top:20px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
