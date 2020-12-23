@@ -9,6 +9,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class HomeComponent implements OnInit {
   formGroup: FormGroup;
+  isLoading: boolean = false;
   isCalculatePressed: boolean = false;
   tableData = {
     termData: {
@@ -30,6 +31,7 @@ export class HomeComponent implements OnInit {
   }
   constructor(private _snackBar: MatSnackBar) { }
   calculate() {
+    this.isLoading = true;
     if(this.formGroup.valid) {  
       this.calculateInterest();
     } else {
@@ -60,6 +62,9 @@ export class HomeComponent implements OnInit {
 
     this.tableData.amrr_period.total = Number(this.tableData.amrr_period.principal+interest);
     this.tableData.termData.total = Number(this.tableData.termData.principal+interest);
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);
   }
   numberOfPayments(years, type) {
     switch(type){

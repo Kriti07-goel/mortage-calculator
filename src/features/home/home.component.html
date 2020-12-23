@@ -18,9 +18,10 @@
   
 
   <div class="center">
-    <button class="calculate" (click) ="calculate()">Calculate</button>
+    <button class="calculate" (click) ="calculate()"><span *ngIf="isLoading">Calculating..</span>
+      <span *ngIf="!isLoading">Calculate</span></button>
   </div>
-  <div class="table_section" *ngIf="isCalculatePressed">
+  <div class="table_section" *ngIf="isCalculatePressed && !isLoading">
     <div class="page_title">
       Mortgage Summary
     </div>
@@ -64,6 +65,9 @@
   </div>
   <div class="table_section" *ngIf="!isCalculatePressed">
     Click calculate to view data.
+  </div>
+  <div class="center margin_top_30" *ngIf="isLoading">
+    Loading.... 
   </div>
   
 </div>
